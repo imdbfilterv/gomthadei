@@ -328,7 +328,7 @@ async def delete(bot, message):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(8)
-            await hehe.delete()            
+            await hehe.delete(8)            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
@@ -341,7 +341,7 @@ async def delete(bot, message):
     else:
         fuk = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(8)
-        await fuk.delete()
+        await fuk.delete(8)
     )
     if result.deleted_count:
         await msg.edit('File is successfully deleted from database')
@@ -352,7 +352,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             
-            InlineKeyboardButton('🔸ᴍᴏᴠɪᴇ ʀᴇǫ🔸', url=f'https://t.me/moviereqgroup_movieshub')
+            InlineKeyboardButton('🔰ᴍᴏᴠɪᴇ ʀᴇǫ🔰', url=f'https://t.me/moviereqgroup_movieshub')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
