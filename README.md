@@ -20,7 +20,7 @@
 
 #### Deploy To Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mhlinksfilterbot/Muruga/edit/master/README.md)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/imdbfilterv/gomthadei/edit/master/README.md)
 
 #### Hard Way
 ```bash
